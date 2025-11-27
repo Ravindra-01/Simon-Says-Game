@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1><span id="simon">Simon</span>
+    <span id="says">Says</span>
+    <span id="game">Game</span>
+
+    </h1> 
+   <h3>Press 'START' to start the game</h3>
+   <div class="box-container">
+    <div class="row1">
+        <div class="box red" id="red" type="button"></div>
+        <div class="box blue" id="blue" type="button"></div>
+    </div>
+    <div class="row2">
+        <div class="box green" id="green" type="button"></div>
+        <div class="box yellow" id="yellow" type="button"></div>
+    </div>
+   </div>
+   <button id="startbtn">START</button>
+ <p>If you're new to the game
+    <a href="rules.html">Click here</a>
+    to know the rules.
+ </p>
+ <br>
+ <div class="gameover">
+    <h1>Game Over</h1>
+    <h2 id="higestScore">Highest-Score: 10</h2>
+    <h2 id="yourScore">Your-Score: 05</h2>
+    <button id="replaybtn">Replay</button>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
