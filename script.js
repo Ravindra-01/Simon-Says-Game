@@ -9,22 +9,25 @@ let hsScore = document.querySelector("#higestScore");
 let yourScorePara = document.querySelector("#yourScore");
 let lvlPara = document.querySelector("h3");
 let boxColor = ["red", "yellow", "blue", "green"];
-function flashBox() {
+
+  function flashBox() {
   let randomIdx = Math.floor(Math.random() * 3);
   let randomBox = boxColor[randomIdx];
   gameSeq.push(randomBox);
   let box = document.querySelector(`.${randomBox}`);
-  box.classList.add("flashWhite");
+  setTimeout(() => {
+    box.classList.add("flashWhite");
+  }, 100);
   setTimeout(function () {
     box.classList.remove("flashWhite");
-  }, 300);
+  }, 400);
   // console.log("gameSeq", gameSeq);
   // console.log("userSeq", userSeq);
   // console.log("level", level);
   lvlPara.innerText = `level ${level + 1}`;
 }
 
-function userFlash(box) {
+  function userFlash(box) {
   console.log("user clicked", box.classList[1]);
   userSeq.push(box.classList[1]);
   box.classList.add("flashGreen");

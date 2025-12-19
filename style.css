@@ -39,6 +39,7 @@ body {
   text-align: center;
   background: linear-gradient(135deg, #020617, #111827, #1f2933);
   color: #e5e7eb;
+  height: 100vh;
 }
 
 .box-container {
@@ -93,6 +94,7 @@ body {
 }
 .flashWhite {
   background-color: white;
+  transform: scale(1.1);
 }
 .flashGreen {
   background-color: green;
@@ -129,7 +131,7 @@ a {
 }
 
 #replaybtn {
-  background-color: rgba(6, 10, 112, 0.687);
+  background-color: rgba(147, 127, 27, 0.678);
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -140,7 +142,7 @@ a {
   border: none;
 }
 #replaybtn:hover {
-  background-color: rgba(53, 86, 232, 0.877);
+  background-color:rgba(130, 122, 9, 0.912);
   cursor: pointer;
 }
 .gameover h1 {
@@ -161,7 +163,7 @@ a {
   }
   .gameover {
     height: 340px;
-    width: 280px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +174,7 @@ a {
     margin: auto;
     position: absolute;
     top: 70px;
-    left: 100px;
+    left: 40px;
     z-index: 10;
     border-radius: 1rem;
     display: none;
